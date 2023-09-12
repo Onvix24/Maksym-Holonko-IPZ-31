@@ -4,26 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebStudio</title>
-        <!-- <link rel="stylesheet" href="./src/css/null.css"> -->
+        <link rel="stylesheet" href="./src/css/null.css">
         <link rel="stylesheet" href="./src/css/style.css">
     </head>
     <body>
 
         <header class="header">
             <div class="header__container">
-                <div class="menu__item logo">
-                    <a href="#" class="logo__link"><span>Web</span>Studio</a>
+                <div class="logo">
+                    <a href="#" class="logo__link"><span class="logo__link_color">Web</span>Studio</a>
                 </div>
                 <nav class="menu__nav">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="studio" class="menu__link">Студія</a>
+                            <a href="./index.html" class="menu__link">Студія</a>
                         </li>
                         <li class="menu__item">
                             <a href="./profie.html" class="menu__link">Портфоліо</a>
                         </li>
                         <li class="menu__item">
-                            <a href="contacts" class="menu__link">Контакти</a>
+                            <a href="#" class="menu__link">Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,7 +45,7 @@
                     <h1 class="header-welcome__title">
                         Ефективні рішення для вашого бізнесу
                     </h1>
-                    <button type="button" class="header-welcome__botton button">
+                    <button type="button" class="header-welcome__botton">
                         Замовити послугу
                     </button>
                 </div>
@@ -80,13 +80,13 @@
                 </h2>
                 <ul class="content-work__list">
                     <li class="content-work__item">
-                        <img src="./src//img/work/1.jpg" alt="our-work-image-1">
+                        <img src="./src/img/studio-page/work/1.jpg" alt="our-work-image-1">
                     </li>
                     <li class="content-work__item">
-                        <img src="./src/img/work/2.jpg" alt="our-work-image-2">
+                        <img src="./src/img/studio-page/work/2.jpg" alt="our-work-image-2">
                     </li>
                     <li class="content-work__item">
-                        <img src="./src/img/work/3.jpg" alt="our-work-image-3">
+                        <img src="./src/img/studio-page/work/3.jpg" alt="our-work-image-3">
                     </li>
                 </ul>
             </section> 
@@ -97,24 +97,32 @@
                 </h2>
                 <ul class="content-team__list">
                     <li class="content-team__item">
-                        <img src="./src/img/team/1.jpg" alt="image" width="270">
+                        <img class="content-card__image" src="./src/img/studio-page/team/1.jpg" alt="image" width="270">
+                        <div class="content-card__body">
                         <h3 class="content-team__title">Ігор Дем'яненко</h3>
                         <p class="content-team__subtitle">Product Designer</p>
+                        </div>
                     </li>
                     <li class="content-team__item">
-                        <img src="./src/img/team/2.jpg" alt="image" width="270">
-                        <h3 class="content-team__title">Ольга Рєпіна</h3>
-                        <p class="content-team__subtitle">Frontend Developer</p>
+                        <img class="content-card__image" src="./src/img/studio-page/team/2.jpg" alt="image" width="270">
+                        <div class="content-card__body">
+                            <h3 class="content-team__title">Ольга Рєпіна</h3>
+                            <p class="content-team__subtitle">Frontend Developer</p>
+                        </div>   
                     </li>
                     <li class="content-team__item">
-                        <img src="./src/img/team/3.jpg" alt="image" width="270">
-                        <h3 class="content-team__title">Микола Тарасов</h3>
-                        <p class="content-team__subtitle">Marketing</p>
+                        <img class="content-card__image" src="./src/img/studio-page/team/3.jpg" alt="image" width="270">
+                        <div class="content-card__body">
+                            <h3 class="content-team__title">Микола Тарасов</h3>
+                            <p class="content-team__subtitle">Marketing</p>
+                        </div>
                     </li>
                     <li class="content-team__item">
-                        <img src="./src/img/team/4.jpg" alt="image" width="270">
-                        <h3 class="content-team__title">Михайло Єрмаков</h3>
-                        <p class="content-team__subtitle">UI Designer</p>
+                        <img class="content-card__image" src="./src/img/studio-page/team/4.jpg" alt="image" width="270">
+                        <div class="content-team__body">
+                            <h3 class="content-team__title">Михайло Єрмаков</h3>
+                            <p class="content-team__subtitle">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -123,7 +131,9 @@
 
         <footer class="footer">
             <div class="footer__container">
-                <a href="#" class="logo__link"><span>Web</span>Studio</a>
+                <div class="logo">
+                    <a href="#" class="logo__link"><span class="logo__link_color">Web</span>Studio</a>
+                </div>
                 <address class="footer__body">
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -143,7 +153,6 @@
                     </ul>
                 </address>
             </div>                          
-
         </footer>
 
     </body>
