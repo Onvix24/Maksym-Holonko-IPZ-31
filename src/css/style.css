@@ -3,16 +3,15 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    padding-left: 215px;
-    padding-right: 215px;
+    padding: 15px;
 }
 
 button {
     background-color: transparent;
     cursor: pointer;
 }
+
 .header {
-    padding: 15px;
 }
 
 .header__container {
@@ -31,6 +30,15 @@ button {
     letter-spacing: 0.78px;
 }
 
+.logo__link_footer {
+    color: #fff;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
 .logo__link_color {
     color: #2196f3;
     font-family: "Raleway";
@@ -42,7 +50,7 @@ button {
 }
 
 .menu__nav {
-    padding: 10px 0 10px 35px;
+    padding: 10px 35px 10px 35px;
 }
 
 .menu__list,
@@ -70,7 +78,7 @@ button {
     color: #2196f3;
 }
 .menu__contact {
-    padding: 10px 0 15px 35px;
+    padding: 10px 35px 15px 35px;
     color: #757575;
 }
 
@@ -90,7 +98,6 @@ button {
 }
 
 .mainpage {
-    padding: 0 15px 0 15px;
 }
 
 .welcome {
@@ -115,7 +122,7 @@ button {
 .header-welcome__botton {
     color: #fff;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -135,7 +142,7 @@ button {
 }
 
 .content-card {
-    padding-left: 35px;
+    padding: 0px 35px 0px 35px;
 }
 
 .content-card__item {
@@ -166,9 +173,13 @@ button {
 }
 
 .content-work {
-    padding-left: 35px;
+    padding: 0px 35px 94px 35px;
 }
-
+.content-work__img {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+}
 .content-work__title {
     color: #212121;
     text-align: center;
@@ -182,7 +193,8 @@ button {
 
 .content-work__list {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -197,10 +209,11 @@ button {
 }
 
 .team__content {
+    background: #f5f4fa;
 }
 
 .content-team {
-    padding: 35px 0 0 35px;
+    padding: 94px 35px 94px 35px;
 }
 
 .content-team__maintitle {
@@ -216,18 +229,25 @@ button {
 
 .content-team__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
 }
 
 .content-team__item {
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.content-card__image {
+.content-team__image {
     width: 270px;
     height: 260px;
 }
 
-.content-card__body {
+.content-team__body {
     padding: 30px 15px 30px 15px;
 }
 .content-team__title {
@@ -252,7 +272,8 @@ button {
 }
 
 .footer {
-    padding: 15px;
+    background: #2f303a;
+    width: 100%;
 }
 
 .footer__container {
@@ -262,6 +283,7 @@ button {
 }
 
 .footer__body {
+    /* display: flex; */
     padding-top: 15px;
 }
 
@@ -282,9 +304,11 @@ button {
 
 .filter-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin-bottom: 50px;
 }
 
 .filter-list__item {
@@ -297,26 +321,38 @@ button {
 }
 
 .filter-list__button {
+    color: #212121;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+}
+
+.filter-list__button {
     background-color: transparent;
 }
 
-.catalog-list {
+.catalog-list {    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    padding-top: 30px;
     align-items: center;
+    padding-top: 30px;
     gap: 30px;
 }
 
 .catalog-list__item {
     display: grid;
-    max-width: 370px;
     justify-content: center;
     border: 1px solid #eee;
     background: #fff;
 }
-
+.catalog-list__img{
+    width: 370px
+}
 .catalog-list__body {
     padding: 20px 24px;
 }
