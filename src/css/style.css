@@ -301,7 +301,10 @@ button {
 }
 
 /* profile styles */
-
+.mainpage-portfolio {
+}
+.filter {
+}
 .filter-list {
     display: flex;
     flex-wrap: wrap;
@@ -335,7 +338,7 @@ button {
     background-color: transparent;
 }
 
-.catalog-list {    
+.catalog-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -346,12 +349,12 @@ button {
 
 .catalog-list__item {
     display: grid;
+    max-width: 370px;
     justify-content: center;
     border: 1px solid #eee;
-    background: #fff;
 }
-.catalog-list__img{
-    width: 370px
+.catalog-list__img {
+    width: 100%;
 }
 .catalog-list__body {
     padding: 20px 24px;
