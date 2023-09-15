@@ -360,12 +360,12 @@ button {
     gap: 30px;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+@media (max-width: 1200px) and (min-width: 900px) {
     .catalog-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 900px) and (min-width: 320px) {
+@media (max-width: 900px) and (min-width: 320px) {
     .catalog-list {
         grid-template-columns: repeat(1, 1fr);
     }
