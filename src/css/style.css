@@ -71,6 +71,7 @@ button {
 }
 
 .menu__link {
+<<<<<<< HEAD
     color: var(--main-black);
     font-size: 14px;
     font-weight: 500;
@@ -80,6 +81,12 @@ button {
 }
 .menu__link:hover {
     color: var(--main-blue);
+=======
+    transition: all 0.3s ease;
+}
+.menu__link:hover {
+    color: #2196f3;
+>>>>>>> d4026c39c2d3dce0645ded33c0c34e6a832fa922
 }
 .active__link {
     color: var(--main-blue);
