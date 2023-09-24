@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
 
+:root {
+    --main-blue: #2196f3;
+    --main-black: #212121;
+    --main-black-logo: #000000;
+    --main-gray: #757575;
+    --main-white: #fff;
+    --main-bg: #2f303a;
+}
+
 body {
     font-family: "Roboto", sans-serif;
-    padding: 15px;
+    /* padding: 15px; */
     font-style: normal;
     line-height: normal;
 }
@@ -12,6 +21,7 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
+
 
 .header {
 }
@@ -23,7 +33,7 @@ button {
 }
 
 .logo__link {
-    color: #000;
+    color: var(--main-black);
     font-family: "Raleway";
     font-size: 26px;
     font-style: normal;
@@ -32,7 +42,7 @@ button {
 }
 
 .logo__link_color {
-    color: #2196f3;
+    color: var(--main-blue);
     font-family: "Raleway";
     font-size: 26px;
     font-style: normal;
@@ -53,56 +63,66 @@ button {
 }
 
 .menu__item {
-    color: #212121;
+    color: var(--main-black);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.28px;
 }
+
 .menu__link {
+    color: var(--main-black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition: color 0.3s ease;
 }
 .menu__link:hover {
-    color: #2196f3;
-    transition: all 0.3s ease;
+    color: var(--main-blue);
 }
 .active__link {
-    color: #2196f3;
+    color: var(--main-blue);
 }
 
 .menu__contact {
     padding: 10px 35px 15px 35px;
-    color: #757575;
+    color: var(--main-gray);
 }
 
-.menu__contact_email {
-    color: #757575;
-}
-
+.menu__contact_email,
 .menu__contact_tel {
-    color: #757575;
+    color: var(--main-gray);
+    transition: color 0.3s ease;
 }
 
-.menu__contact_tel:hover {
-    color: #2196f3;
+/* .menu__contact_tel {
+    color: var(--main-gray);
     transition: all 0.3s ease;
-}
+} */
+
+.menu__contact_tel:hover,
 .menu__contact_email:hover {
-    color: #2196f3;
-    transition: all 0.3s ease;
+    color: var(--main-blue);
 }
+
+/* .menu__contact_email:hover {
+    color: var(--main-blue);
+    transition: all 0.3s ease;
+} */
 
 .mainpage {
 }
 
 .welcome {
-    background: #2f303a;
+    background: var(--main-bg);
 }
 
 .header-welcome__item {
 }
 
 .header-welcome__title {
-    color: #fff;
+    color: var(--main-white);
     text-align: center;
     font-size: 44px;
     font-style: normal;
@@ -113,24 +133,21 @@ button {
 }
 
 .header-welcome__button {
-    color: #fff;
+    color: var(--main-white);
+    padding: 10px 32px;
     text-align: center;
-    font-family: "Roboto";
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 0.48em;
+    line-height: 1.875em;
     letter-spacing: 0.96px;
-    width: 200px;
-    height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
     background: #2196f3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease;
 }
 .header-welcome__button:hover {
-    background: rgba(33, 150, 243, 0.5);
-    transition: background 0.3s ease;
+    background: #188ce8;
 }
 .card {
 }
@@ -158,15 +175,12 @@ button {
 }
 
 .content-card__subtitle {
-    color: #757575;
+    color: var(--main-gray);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.7em;
     letter-spacing: 0.42px;
-}
-
-.work__content {
 }
 
 .content-work {
@@ -178,7 +192,7 @@ button {
     flex-shrink: 0;
 }
 .content-work__title {
-    color: #212121;
+    color: var(--main-black);
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -214,7 +228,7 @@ button {
 }
 
 .content-team__maintitle {
-    color: #212121;
+    color: var(--main-black) z;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -247,7 +261,7 @@ button {
     padding: 30px 15px 30px 15px;
 }
 .content-team__title {
-    color: #212121;
+    color: var(--main-black);
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -257,7 +271,7 @@ button {
 }
 
 .content-team__subtitle {
-    color: #757575;
+    color: var(--main-gray);
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -266,7 +280,7 @@ button {
 }
 
 .footer {
-    background: #2f303a;
+    background: var(--main-bg);
     width: 100%;
 }
 
@@ -294,29 +308,27 @@ button {
 .menu-footer {
 }
 .menu-footer__item {
+    font-style: normal;
 }
 .menu-footer__link_adress {
-    color: #fff;
-    font-family: "Roboto";
+    color: var(--main-white);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.14em;
     letter-spacing: 0.42px;
+    transition: color 0.3s ease;
 }
 .menu-footer__link {
     color: rgba(255, 255, 255, 0.6);
-    font-family: "Roboto";
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.14em;
     letter-spacing: 0.42px;
+    transition: color 0.3s ease;
 }
 .menu-footer__link:hover,
 .menu-footer__link_adress:hover {
-    color: #2196f3;
-    transition: all 0.3s ease;
+    color: var(--main-blue);
 }
 
 /* prortfole styles */
@@ -355,8 +367,8 @@ button {
 .filter-list__button:hover {
     scale: 1.2;
     transition: all 0.3s ease;
-    color: #fff;
-    background: #2196f3;
+    color: var(--main-white);
+    background: var(--main-blue);
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -404,7 +416,7 @@ button {
     }
 }
 .catalog-list__title {
-    color: #212121;
+    color: var(--main-black);
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -413,10 +425,18 @@ button {
 }
 
 .catalog-list__subtitle {
-    color: #757575;
+    color: var(--main-gray);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.85em;
     letter-spacing: 0.48px;
+}
+
+
+/* =================================================================================================== */
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
 }
