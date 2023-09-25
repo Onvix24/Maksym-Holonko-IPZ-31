@@ -1,1 +1,1 @@
-# Max-Golonko-IPZ-31
+# Maksym-Holonko-IPZ-31

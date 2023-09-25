@@ -146,25 +146,6 @@ button {
     color: var(--main-blue);
 }
 
-.burger__menu {
-    display: none;
-    cursor: pointer;
-}
-
-.burger__menu_icon {
-    width: 30px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.bar {
-    width: 100%;
-    height: 4px;
-    background-color: #333;
-}
-
 /* ================================ */
 .mainpage {
 }
