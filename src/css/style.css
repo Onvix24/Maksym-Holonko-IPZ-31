@@ -42,13 +42,14 @@ button {
 @media (max-width: 900px) and (min-width: 600px) {
     .header__container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 20px;
     }
 
     .menu__contact {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        column-gap: 20px;
     }
 }
 
@@ -59,12 +60,6 @@ button {
 
     .menu__contact {
         display: none;
-    }
-}
-
-@media (max-width: 600px) {
-    .burger__menu {
-        display: block; /* Показуємо бургер меню на екранах менше 600px */
     }
 }
 .logo {
@@ -491,4 +486,5 @@ button {
 
 [class*="__container"] {
     max-width: 1200px;
+    margin: 0 auto;
 }
