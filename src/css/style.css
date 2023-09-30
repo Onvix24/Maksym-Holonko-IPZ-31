@@ -149,9 +149,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    padding: 200px 0;
+    max-height: 600px;
     margin-bottom: 94px;
-    padding: 0px 15px;
     background: var(--main-bg);
 }
 
