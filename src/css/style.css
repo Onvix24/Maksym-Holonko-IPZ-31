@@ -22,6 +22,7 @@ button {
 }
 
 .header {
+    border-bottom: 1px solid lightgray;
 }
 
 .header__container {
