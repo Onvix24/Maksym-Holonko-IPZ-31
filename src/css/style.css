@@ -178,7 +178,7 @@ button {
 .header-welcome__button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     flex-shrink: 0;
-    padding: 10px 32px;
+    padding: 10px 24px;
     transition: background 0.3s ease;
     background: #2196f3;
     border-radius: 4px;
