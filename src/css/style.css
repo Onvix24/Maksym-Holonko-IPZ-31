@@ -192,6 +192,7 @@ button {
 .header-welcome__button:hover {
     background: #188ce8;
 }
+
 .card__container {
     margin: 0 auto 94px auto;
 }
@@ -386,6 +387,7 @@ button {
 .mainpage-portfolio {
 }
 .store__container {
+    margin: 0 auto;
 }
 .filter-list {
     display: flex;
@@ -486,5 +488,4 @@ button {
 
 [class*="__container"] {
     max-width: 1200px;
-    margin: 0 auto;
 }
