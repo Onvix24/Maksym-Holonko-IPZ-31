@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebStudio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="./src/css/null.css">
         <link rel="stylesheet" href="./src/css/style.css">
     </head>
@@ -28,10 +30,10 @@
                     </ul>
                 </nav>
                 <ul class="menu__contact">
-                    <li>
+                    <li class="menu__item">
                         <a href="mailto:info@devstudio.com" class="menu__contact_email">info@devstudio.com</a>
-                    </li>            
-                    <li>
+                    </li>
+                    <li class="menu__item">
                         <a href="tel:+380961111111" class="menu__contact_tel">+38 096 111 11 11</a>
                     </li>
                 </ul>
@@ -52,94 +54,100 @@
             </section>
 
             <section class="card">
-                <h2 style="visibility: hidden;">Наші переваги</h2>
-                
-                <ul class="content-card__list">
-                    <li class="content-card__item">
-                        <h3 class="content-card__title">Увага до деталей</h3>
-                        <p class="content-card__subtitle">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                    </li>
-                    <li class="content-card__item">
-                        <h3 class="content-card__title">Пунктуальність</h3>
-                        <p class="content-card__subtitle">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    </li>
-                    <li class="content-card__item">
-                        <h3 class="content-card__title">Планування</h3>
-                        <p class="content-card__subtitle">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    </li>
-                    <li class="content-card__item">
-                        <h3 class="content-card__title">Сучасні технології</h3>
-                        <p class="content-card__subtitle">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                    </li>
-                </ul>
+                <div class="card__container">
+                    <h2 style="visibility: hidden;">Наші переваги</h2>
+
+                    <ul class="content-card__list">
+                        <li class="content-card__item">
+                            <h3 class="content-card__title">Увага до деталей</h3>
+                            <p class="content-card__subtitle">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        </li>
+                        <li class="content-card__item">
+                            <h3 class="content-card__title">Пунктуальність</h3>
+                            <p class="content-card__subtitle">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        </li>
+                        <li class="content-card__item">
+                            <h3 class="content-card__title">Планування</h3>
+                            <p class="content-card__subtitle">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        </li>
+                        <li class="content-card__item">
+                            <h3 class="content-card__title">Сучасні технології</h3>
+                            <p class="content-card__subtitle">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
-            <section class="work__content content-work">
-                <h2 class="content-work__title">
-                    Чим ми займаємося
-                </h2>
-                <ul class="content-work__list">
-                    <li class="content-work__item">
-                        <img class="content-work__img" src="./src/img/studio-page/work/1.jpg" alt="our-work-image-1">
-                    </li>
-                    <li class="content-work__item">
-                        <img class="content-work__img" src="./src/img/studio-page/work/2.jpg" alt="our-work-image-2">
-                    </li>
-                    <li class="content-work__item">
-                        <img class="content-work__img" src="./src/img/studio-page/work/3.jpg" alt="our-work-image-3">
-                    </li>
-                </ul>
-            </section> 
+            <section class="work-content content-work">
+                <div class="content-work__container">
+                    <h2 class="content-work__title">
+                        Чим ми займаємося
+                    </h2>
+                    <ul class="content-work__list">
+                        <li class="content-work__item">
+                            <img class="content-work__img" src="./src/img/studio-page/work/1.jpg" alt="our-work-image-1">
+                        </li>
+                        <li class="content-work__item">
+                            <img class="content-work__img" src="./src/img/studio-page/work/2.jpg" alt="our-work-image-2">
+                        </li>
+                        <li class="content-work__item">
+                            <img class="content-work__img" src="./src/img/studio-page/work/3.jpg" alt="our-work-image-3">
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
             <section class="team__content content-team">
-                <h2 class="content-team__maintitle">
-                    Наша команда
-                </h2>
-                <ul class="content-team__list">
-                    <li class="content-team__item">
-                        <img class="content-team__image" src="./src/img/studio-page/team/1.jpg" alt="image" width="270">
-                        <div class="content-team__body">
-                        <h3 class="content-team__title">Ігор Дем'яненко</h3>
-                        <p class="content-team__subtitle">Product Designer</p>
-                        </div>
-                    </li>
-                    <li class="content-team__item">
-                        <img class="content-team__image" src="./src/img/studio-page/team/2.jpg" alt="image" width="270">
-                        <div class="content-team__body">
-                            <h3 class="content-team__title">Ольга Рєпіна</h3>
-                            <p class="content-team__subtitle">Frontend Developer</p>
-                        </div>   
-                    </li>
-                    <li class="content-team__item">
-                        <img class="content-team__image" src="./src/img/studio-page/team/3.jpg" alt="image" width="270">
-                        <div class="content-team__body">
-                            <h3 class="content-team__title">Микола Тарасов</h3>
-                            <p class="content-team__subtitle">Marketing</p>
-                        </div>
-                    </li>
-                    <li class="content-team__item">
-                        <img class="content-team__image" src="./src/img/studio-page/team/4.jpg" alt="image" width="270">
-                        <div class="content-team__body">
-                            <h3 class="content-team__title">Михайло Єрмаков</h3>
-                            <p class="content-team__subtitle">UI Designer</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="content-team__container">
+                    <h2 class="content-team__maintitle">
+                        Наша команда
+                    </h2>
+                    <ul class="content-team__list">
+                        <li class="content-team__item">
+                            <img class="content-team__image" src="./src/img/studio-page/team/1.jpg" alt="image" width="270">
+                            <div class="content-team__body">
+                            <h3 class="content-team__title">Ігор Дем'яненко</h3>
+                            <p class="content-team__subtitle">Product Designer</p>
+                            </div>
+                        </li>
+                        <li class="content-team__item">
+                            <img class="content-team__image" src="./src/img/studio-page/team/2.jpg" alt="image" width="270">
+                            <div class="content-team__body">
+                                <h3 class="content-team__title">Ольга Рєпіна</h3>
+                                <p class="content-team__subtitle">Frontend Developer</p>
+                            </div>
+                        </li>
+                        <li class="content-team__item">
+                            <img class="content-team__image" src="./src/img/studio-page/team/3.jpg" alt="image" width="270">
+                            <div class="content-team__body">
+                                <h3 class="content-team__title">Микола Тарасов</h3>
+                                <p class="content-team__subtitle">Marketing</p>
+                            </div>
+                        </li>
+                        <li class="content-team__item">
+                            <img class="content-team__image" src="./src/img/studio-page/team/4.jpg" alt="image" width="270">
+                            <div class="content-team__body">
+                                <h3 class="content-team__title">Михайло Єрмаков</h3>
+                                <p class="content-team__subtitle">UI Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
         </main>
 
         <footer class="footer">
             <div class="footer__container">
-                <div class="logo">
+                <div class="logo logo__footer">
                     <a href="./index.html" class="logo__link_footer"><span class="logo__link_color">Web</span>Studio</a>
                 </div>
                 <address class="footer__body">
                     <ul class="footer__menu menu-footer">
                         <li class="menu-footer__item">
-                            <a href="https://www.google.com/maps?q=м.Київ,пр-тЛесіУкраїнки,26" 
+                            <a href="https://www.google.com/maps?q=м.Київ,пр-тЛесіУкраїнки,26"
                                 rel="nofollow"
-                                target="_blank"    
+                                target="_blank"
                                 class="menu-footer__link_adress">
                                 м. Київ, пр-т Лесі Українки, 26
                             </a>
@@ -152,8 +160,8 @@
                         </li>
                     </ul>
                 </address>
-            </div>                          
+            </div>
         </footer>
-
+        <script src="./src/js/script.js"></script>
     </body>
 </html>
