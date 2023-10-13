@@ -41,7 +41,7 @@ button {
     align-items: center; */
 }
 
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
     .contact .contact__item {
         padding: 11.5px 0;
     }
@@ -53,7 +53,7 @@ button {
     .contact_tel {
         padding: 10px 0;
     }
-}
+} */
 /* @media (max-width: 900px) and (min-width: 600px) {
     .header__container {
         grid-template-columns: repeat(3, 1fr);
@@ -146,6 +146,7 @@ button {
     color: var(--main-black);
     letter-spacing: 0.28px;
     padding: 31.5px 0;
+    transition: all 0.3s ease;
 }
 .nav__item:hover::after {
     content: "";
@@ -180,6 +181,7 @@ button {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    transition: all 0.3s ease;
 }
 .contact__item:hover {
     color: var(--main-blue);
@@ -210,6 +212,17 @@ button {
     padding: 31.5px 0;
 }
 
+@media (max-width: 990px) {
+    .contact {
+        justify-content: flex-end;
+    }
+
+    .contact__email,
+    .contact__tel {
+        padding: 10.5px 0;
+    }
+}
+
 /* .contact__tel:hover,
 .contact__tel:focus,
 .contact__email:hover,
@@ -228,15 +241,9 @@ button {
     align-items: center;
     padding: 200px 0;
     max-height: 600px;
-    background: url("../img/studio-page/welcome/main-bg.jpg");
-    z-index: 5;
-}
-.welcome::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(47, 48, 58, 0.4);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../img/studio-page/welcome/main-bg.jpg");
+    background-size: cover;
 }
 .welcome__item {
     z-index: 3;
@@ -287,6 +294,7 @@ button {
 
 .content-card__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -443,6 +451,20 @@ button {
     width: 44px;
     height: 44px;
     color: var(--main-svg);
+    cursor: pointer;
+    transition: border-radius 0.3s ease, background-color 0.3s ease,
+        color 0.3s ease;
+}
+.content-team__inner:hover {
+    border-radius: 50%;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.content-team__link {
+    display: flex;
+    align-items: center;
+    color: var(--main-svg);
 }
 .content-team__content {
     width: 20px;
@@ -459,7 +481,7 @@ button {
 }
 .footer__container {
     display: flex;
-    column-gap: 70px;
+    column-gap: 94px;
 }
 .logo {
 }
@@ -467,13 +489,18 @@ button {
     margin-bottom: 28px;
 }
 .logo__link_footer {
-    font-size: 26px;
+    color: var(--main-white);
     font-family: "Raleway";
+    font-size: 26px;
     font-weight: 700;
-    color: #fff;
     letter-spacing: 0.78px;
 }
 .logo__link_color {
+    color: var(--main-blue);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
 }
 .footer__body {
 }
@@ -481,18 +508,20 @@ button {
 }
 .menu-footer {
     display: flex;
-    flex-direction: column;
-    /* row-gap: 12px; */
+    flex-wrap: wrap;
+    max-width: 231px;
+    /* flex-direction: column; */
+    row-gap: 12px;
 }
 .menu-footer__item {
+    font-size: 14px;
     font-style: normal;
 }
 
 .menu-footer__link_adress {
     transition: color 0.3s ease;
-    font-size: 14px;
     font-weight: 400;
-    line-height: 1.14em;
+    line-height: 1.13em;
     color: var(--main-white);
     letter-spacing: 0.42px;
 }
@@ -578,6 +607,10 @@ button {
     max-width: 370px;
     border: 1px solid #eee;
 }
+.catalog-list__item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
 .catalog-list__img {
     width: 100%;
     height: auto;
@@ -640,6 +673,7 @@ button {
 }
 .fulltime-client__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -692,6 +726,11 @@ button {
     gap: 10px;
 }
 
+.social__link {
+    display: flex;
+    align-items: center;
+    color: var(--main-white);
+}
 .social__item {
     display: flex;
     justify-content: center;
@@ -700,17 +739,19 @@ button {
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: var(--main-svg);
+    color: var(--main-white);
     transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .social__item:hover,
 .social__item:focus {
     background: var(--main-blue);
-    color: var(--main-white);
 }
 
 .social__item__content {
     width: 20px;
     height: 20px;
 }
+
+/* ///////////////////////////////////////////////////////// */
