@@ -6,42 +6,46 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./src/css/null.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-</head>
+    <link rel="stylesheet" href="./src/css/style.css"> 
 <body>
-    <header class="header">
+    
+    <header class="header header__border">
         <div class="header__container">
             <div class="logo">
                 <a href="./index.html" class="logo__link"><span class="logo__link_color">Web</span>Studio</a>
             </div>
-            <nav class="menu__nav">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="./index.html" class="menu__link">Студія</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link ">Студія</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="./portfolio.html" class="menu__link active__link">Портфоліо</a>
+                    <li class="nav__item">
+                        <a href="./portfolio.html" class="nav__link nav__link_active">Портфоліо</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Контакти</a>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="menu__contact">
-                <li class="menu__item">
-                    <a href="mailto:info@devstudio.com" class="menu__contact_email">info@devstudio.com</a>
+            <ul class="contact">
+                <li class="contact__item">
+                    <svg class="contact__image_envelope">
+                        <use href="./src/img/icons.svg#icon-envelope"></use>
+                    </svg> 
+                    <a href="mailto:info@devstudio.com" class="contact__email">info@devstudio.com</a>
                 </li>            
-                <li class="menu__item">
-                    <a href="tel:+380961111111" class="menu__contact_tel">+38 096 111 11 11</a>
+                <li class="contact__item">
+                    <svg class="contact__image_smartphone">
+                        <use href="./src/img/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    <a href="tel:+380961111111" class="contact__tel">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header>
 
-    <main class="mainpage-portfolio">
+    <main class="main">
         <section class="store__container">
             <ul class="filter-list">
                 <li class="filter-list__item">
@@ -69,56 +73,56 @@
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/2.jpg" alt="image-2">
+                    <img class="catalog-list__img" src="./src/img/profile-page/2.jpg" alt="catalog-item-2">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Постер New Orlean vs Golden Star</div>
                         <div class="catalog-list__subtitle">Дизайн</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/3.jpg" alt="image-3">
+                    <img class="catalog-list__img" src="./src/img/profile-page/3.jpg" alt="catalog-item-3">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Ресторан Seafood</div>
                         <div class="catalog-list__subtitle">Додаток</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/4.jpg" alt="image-4">
+                    <img class="catalog-list__img" src="./src/img/profile-page/4.jpg" alt="catalog-item-4">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Проєкт Prime</div>
                         <div class="catalog-list__subtitle">Маркетинг</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/5.jpg" alt="image-5">
+                    <img class="catalog-list__img" src="./src/img/profile-page/5.jpg" alt="catalog-item-5">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Проєкт Boxes</div>
                         <div class="catalog-list__subtitle">Додаток</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/6.jpg" alt="image-6">
+                    <img class="catalog-list__img" src="./src/img/profile-page/6.jpg" alt="catalog-item-6">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Inspiration has no Borders</div>
                         <div class="catalog-list__subtitle">Веб-сайт</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/7.jpg" alt="image-7">
+                    <img class="catalog-list__img" src="./src/img/profile-page/7.jpg" alt="catalog-item-7">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Веб-сайт</div>
                         <div class="catalog-list__subtitle">Дизайн</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/8.jpg" alt="image-8">
+                    <img class="catalog-list__img" src="./src/img/profile-page/8.jpg" alt="catalog-item-8">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Проєкт LAB</div>
                         <div class="catalog-list__subtitle">Маркетинг</div>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/9.jpg" alt="image-9">
+                    <img class="catalog-list__img" src="./src/img/profile-page/9.jpg" alt="catalog-item-9">
                     <div class="catalog-list__body">
                         <div class="catalog-list__title">Growing Business</div>
                         <div class="catalog-list__subtitle">Додаток</div>
@@ -130,29 +134,65 @@
     
     <footer class="footer">
         <div class="footer__container">
-            <div class="logo__footer">
-                <a href="./index.html" class="logo__link_footer"><span class="logo__link_color">Web</span>Studio</a>
+            <div class="footer__inner">
+                <div class="logo logo__footer">
+                    <a href="./index.html" class="logo__link_footer"><span class="logo__link_color">Web</span>Studio</a>
+                </div>
+                <address class="footer__body">
+                    <ul class="footer__menu menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="https://www.google.com/maps?q=м.Київ,пр-тЛесіУкраїнки,26"
+                                rel="nofollow"
+                                target="_blank"
+                                class="menu-footer__link_adress">
+                                м. Київ, пр-т Лесі Українки, 26
+                            </a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="mailto:info@devstudio.com" class="menu-footer__link">info@devstudio.com</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="tel:+380961111111" class="menu-footer__link">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
             </div>
-            <address class="footer__body">
-                <ul class="footer__menu menu-footer">
-                    <li class="menu-footer__item">
-                        <a href="https://www.google.com/maps?q=м.Київ,пр-тЛесіУкраїнки,26" 
-                            rel="nofollow"
-                            target="_blank"    
-                            class="menu-footer__link_adress">
-                            м. Київ, пр-т Лесі Українки, 26
+            <div class="social">
+                <h3 class="social__title">Приєднуйтесь</h3>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="https://www.instagram.com" target="_blank" class="social__link">
+                            <svg class="social__item__content">
+                                <use href="./src/img/icons.svg#icon-instagram"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li class="menu-footer__item">
-                        <a href="mailto:info@devstudio.com" class="menu-footer__link">info@devstudio.com</a>
+                    <li class="social__item">
+                        <a href="https://twitter.com/" target="_blank" class="social__link">
+                            <svg class="social__item__content">
+                                <use href="./src/img/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="menu-footer__item">
-                        <a href="tel:+380961111111" class="menu-footer__link">+38 096 111 11 11</a>
+                    <li class="social__item">
+                        <a href="https://facebook.com/" target="_blank" class="social__link">
+                            <svg class="social__item__content">
+                                <use href="./src/img/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://linkedin.com/" target="_blank" class="social__link">
+                            <svg class="social__item__content">
+                                <use href="./src/img/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
-        </div>                          
+            </div>
+        </div>
     </footer>
+
     <script src="./src/js/script.js"></script>
 </body>
 </html>
