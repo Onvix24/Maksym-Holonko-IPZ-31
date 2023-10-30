@@ -19,13 +19,13 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__link nav__link_active">Студія</a>
+                            <a href="./index.html" class="nav__link" id="studio">Студія</a>
                         </li>
                         <li class="nav__item">
-                            <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+                            <a href="./portfolio.html" class="nav__link" id="portfolio">Портфоліо</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Контакти</a>
+                            <a href="#" class="nav__link" id="contact" data-modal-open>Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -113,19 +113,19 @@
                     </h2>
                     <ul class="content-work__list">
                         <li class="content-work__item">
-                            <img class="content-work__img" src="./src/img/studio-page/work/1.jpg" alt="our-work-image-1">
+                            <img class="content-work__img" width="400" src="./src/img/studio-page/work/1.jpg" alt="our-work-image-1">
                             <div class="content-work__text">
                                 Десктопні додатки
                             </div>
                         </li>
                         <li class="content-work__item">
-                            <img class="content-work__img" src="./src/img/studio-page/work/2.jpg" alt="our-work-image-2">
+                            <img class="content-work__img" width="400" src="./src/img/studio-page/work/2.jpg" alt="our-work-image-2">
                             <div class="content-work__text">
                                 Мобільні додатки
                             </div>
                         </li>
                         <li class="content-work__item">
-                            <img class="content-work__img" src="./src/img/studio-page/work/3.jpg" alt="our-work-image-3">
+                            <img class="content-work__img" width="400" src="./src/img/studio-page/work/3.jpg" alt="our-work-image-3">
                             <div class="content-work__text">
                                 Дизайнерські рішення
                             </div>
@@ -141,7 +141,7 @@
                     </h2>
                     <ul class="content-team__list">
                         <li class="content-team__item">
-                            <img class="content-team__image" src="./src/img/studio-page/team/1.jpg" alt="Ihor Demyanenko" width="270">
+                            <img class="content-team__image" width="270" src="./src/img/studio-page/team/1.jpg" alt="Ihor Demyanenko" width="270">
                             <div class="content-team__body">
                                 <h3 class="content-team__title">Ігор Дем'яненко</h3>
                                 <p class="content-team__subtitle">Product Designer</p>
@@ -178,7 +178,7 @@
                             </div>
                         </li>
                         <li class="content-team__item">
-                            <img class="content-team__image" src="./src/img/studio-page/team/2.jpg" alt="Olga Repina" width="270">
+                            <img class="content-team__image" width="270" src="./src/img/studio-page/team/2.jpg" alt="Olga Repina" width="270">
                             <div class="content-team__body">
                                 <h3 class="content-team__title">Ольга Рєпіна</h3>
                                 <p class="content-team__subtitle">Frontend Developer</p>
@@ -215,7 +215,7 @@
                             </div>
                         </li>
                         <li class="content-team__item">
-                            <img class="content-team__image" src="./src/img/studio-page/team/3.jpg" alt="Mykola Tarasov" width="270">
+                            <img class="content-team__image" width="270" src="./src/img/studio-page/team/3.jpg" alt="Mykola Tarasov" width="270">
                             <div class="content-team__body">
                                 <h3 class="content-team__title">Микола Тарасов</h3>
                                 <p class="content-team__subtitle">Marketing</p>
@@ -252,7 +252,7 @@
                             </div>
                         </li>
                         <li class="content-team__item">
-                            <img class="content-team__image" src="./src/img/studio-page/team/4.jpg" alt="Mykhailo Yermakov" width="270">
+                            <img class="content-team__image" width="270" src="./src/img/studio-page/team/4.jpg" alt="Mykhailo Yermakov" width="270">
                             <div class="content-team__body">
                                 <h3 class="content-team__title">Михайло Єрмаков</h3>
                                 <p class="content-team__subtitle">UI Designer</p>
@@ -404,6 +404,16 @@
                 </div>
             </div>
         </footer>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal"> 
+                <button type="button" class="modal__button" data-modal-close> 
+                    <svg class="modal__close">
+                        <use href="./src/img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
         <script src="./src/js/script.js"></script>
     </body>

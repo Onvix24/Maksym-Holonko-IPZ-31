@@ -18,13 +18,13 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="./index.html" class="nav__link ">Студія</a>
+                        <a href="./index.html" class="nav__link" id="studio">Студія</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./portfolio.html" class="nav__link nav__link_active">Портфоліо</a>
+                        <a href="./portfolio.html" class="nav__link" id="portfolio">Портфоліо</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Контакти</a>
+                        <a href="#" class="nav__link" id="contact" data-modal-open>Контакти</a>
                     </li>
                 </ul>
             </nav>
@@ -46,6 +46,7 @@
     </header>
 
     <main class="main">
+        
         <section class="store__container">
             <ul class="filter-list">
                 <li class="filter-list__item">
@@ -66,66 +67,113 @@
             </ul>
             <ul class="catalog-list">
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/1.jpg" alt="image-1" width="370">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Технокряк</div>
-                        <div class="catalog-list__subtitle">Веб-сайт</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/1.jpg" alt="image-1" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу. <br/>
+                            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Технокряк</h3>
+                        <p class="catalog-list__subtitle">Веб-сайт</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/2.jpg" alt="catalog-item-2">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Постер New Orlean vs Golden Star</div>
-                        <div class="catalog-list__subtitle">Дизайн</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/2.jpg" alt="image-2" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Постер New Orlean vs Golden Star</h3>
+                        <p class="catalog-list__subtitle">Дизайн</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/3.jpg" alt="catalog-item-3">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Ресторан Seafood</div>
-                        <div class="catalog-list__subtitle">Додаток</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/3.jpg" alt="image-2" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Ресторан Seafood</h3>
+                        <p class="catalog-list__subtitle">Додаток</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/4.jpg" alt="catalog-item-4">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Проєкт Prime</div>
-                        <div class="catalog-list__subtitle">Маркетинг</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/4.jpg" alt="image-2" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Проєкт Prime</h3>
+                        <p class="catalog-list__subtitle">Маркетинг</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/5.jpg" alt="catalog-item-5">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Проєкт Boxes</div>
-                        <div class="catalog-list__subtitle">Додаток</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/5.jpg" alt="image-2" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Проєкт Boxes</h3>
+                        <p class="catalog-list__subtitle">Додаток</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/6.jpg" alt="catalog-item-6">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Inspiration has no Borders</div>
-                        <div class="catalog-list__subtitle">Веб-сайт</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/6.jpg" alt="image-6" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Inspiration has no Borders</h3>
+                        <p class="catalog-list__subtitle">Веб-сайт</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/7.jpg" alt="catalog-item-7">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Веб-сайт</div>
-                        <div class="catalog-list__subtitle">Дизайн</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/7.jpg" alt="image-7" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Видання Limited Edition</h3>
+                        <p class="catalog-list__subtitle">Дизайн</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/8.jpg" alt="catalog-item-8">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Проєкт LAB</div>
-                        <div class="catalog-list__subtitle">Маркетинг</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/8.jpg" alt="image-8" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Проєкт LAB</h3>
+                        <p class="catalog-list__subtitle">Маркетинг</p>
                     </div>
                 </li>
                 <li class="catalog-list__item">
-                    <img class="catalog-list__img" src="./src/img/profile-page/9.jpg" alt="catalog-item-9">
                     <div class="catalog-list__body">
-                        <div class="catalog-list__title">Growing Business</div>
-                        <div class="catalog-list__subtitle">Додаток</div>
+                        <img class="catalog-list__img" src="./src/img/profile-page/9.jpg" alt="image-9" width="370">
+                        <div class="catalog-list__text_inner">
+                            <p class="catalog-list__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                        </div>
+                    </div>
+                    <div class="catalog-list__content_inner">
+                        <h3 class="catalog-list__title">Growing Business</h3>
+                        <p class="catalog-list__subtitle">Додаток</p>
                     </div>
                 </li>
             </ul>
@@ -193,6 +241,16 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal"> 
+            <button type="button" class="modal__button" data-modal-close> 
+                <svg class="modal__close">
+                    <use href="./src/img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
     <script src="./src/js/script.js"></script>
 </body>
 </html>
