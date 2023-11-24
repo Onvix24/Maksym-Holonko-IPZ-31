@@ -19,28 +19,32 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__link" id="studio">Студія</a>
+                            <a href="./index.html" class="nav__link nav__link_active" id="studio">Студія</a>
                         </li>
                         <li class="nav__item">
                             <a href="./portfolio.html" class="nav__link" id="portfolio">Портфоліо</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link" id="contact" data-modal-open>Контакти</a>
+                            <a href="#" class="nav__link" id="contact">Контакти</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="contact">
                     <li class="contact__item">
-                        <svg class="contact__image_envelope">
-                            <use href="./src/img/icons.svg#icon-envelope"></use>
-                        </svg> 
-                        <a href="mailto:info@devstudio.com" class="contact__email">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" class="contact__email">
+                            <svg class="contact__image_envelope">
+                                <use href="./src/img/icons.svg#icon-envelope"></use>
+                            </svg> 
+                            info@devstudio.com
+                        </a>
                     </li>            
                     <li class="contact__item">
-                        <svg class="contact__image_smartphone">
-                            <use href="./src/img/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        <a href="tel:+380961111111" class="contact__tel">+38 096 111 11 11</a>
+                        <a href="tel:+380961111111" class="contact__tel">
+                            <svg class="contact__image_smartphone">
+                                <use href="./src/img/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +57,7 @@
                     <h1 class="welcome__title">
                         Ефективні рішення для вашого бізнесу
                     </h1>
-                    <button type="button" class="welcome__button">
+                    <button type="button" class="welcome__button" data-modal-open>
                         Замовити послугу
                     </button>
                 </div>
