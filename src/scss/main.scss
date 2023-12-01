@@ -1,2 +1,14 @@
-@import "./modal";
-@import "./foooter"
+@import "./shared/null.scss";
+@import "./shared/base.scss";
+@import "./shared/footer.scss";
+@import "./shared/header.scss";
+
+
+@import "./studio/modal.scss";
+@import "./studio/welcome.scss";
+@import "./studio/card.scss";
+@import "./studio/work.scss";
+@import "./studio/team.scss";
+@import "./studio/fulltime-client.scss";
+
+@import "./portfolio/filter.scss";

@@ -406,9 +406,9 @@
                         </li>
                     </ul>
                 </div>
-                <form class="distribution">
-                    <label for="send" class="distribution__title">Підпишіться на розсилку</label>
-                    <div class="distribution__wrapper">
+                <div class="distribution">
+                    <h3 for="send" class="distribution__title">Підпишіться на розсилку</h3>
+                    <form class="distribution__wrapper">
                         <input class="distribution__input" id="send" type="text" placeholder="E-mail">
                         <button class="distribution__button" type="submit">
                             Підписатися
@@ -416,8 +416,8 @@
                                 <use href="./src/img/icons.svg#icon-send"></use>
                             </svg>
                         </button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </footer>
 
@@ -430,7 +430,7 @@
                 </button>
                 <div class="form content-form">
                     <form class="content-form__inner">
-                        <div class="content-form__title">Залиште свої дані, ми вам передзвонимо</div>
+                        <h3 class="content-form__title">Залиште свої дані, ми вам передзвонимо</h3>
                         <ul class="content-form__list">
                             <li class="content-form__item">
                                 <label class="content-form__subtitle" for="name">Ім'я</label>
@@ -453,7 +453,7 @@
                             <li class="content-form__item">
                                 <label class="content-form__subtitle" for="email">Пошта</label>
                                 <div class="content-form__wrapper">
-                                    <input class="content-form__input" type="email" name="phone" id="email" placeholder="emailexample@lntu.edu.ua" required>
+                                    <input class="content-form__input" type="email" name="email" id="email" placeholder="emailexample@lntu.edu.ua" required>
                                     <svg class="content-form__icon" width="18" height="18">
                                         <use href="./src/img/icons.svg#icon-email_modal" ></use>
                                     </svg>
@@ -470,7 +470,7 @@
                                 <svg class="content-form__icon_checkbox" width="18" height="18">
                                     <use href="./src/img/icons.svg#icon-check" ></use>
                                 </svg>
-                                <p class="content-form__text">Погоджуюся з розсилкою та приймаю <span class="content-form__text_blue">Умови договору</span></p>
+                                <p class="content-form__text">Погоджуюся з розсилкою та приймаю <a href="#" class="content-form__text_blue">Умови договору</a></p>
                             </label>
                         </div>
                         <button class="content-form__button" type="submit">Відправити</button>
