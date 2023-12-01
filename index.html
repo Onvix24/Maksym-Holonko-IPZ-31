@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="./src/css/null.css">
         <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./src/scss/main.css">
     </head>
     <body>
 
@@ -25,7 +26,7 @@
                             <a href="./portfolio.html" class="nav__link" id="portfolio">Портфоліо</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link" id="contact">Контакти</a>
+                            <a href="" class="nav__link" id="contact">Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -405,6 +406,18 @@
                         </li>
                     </ul>
                 </div>
+                <form class="distribution">
+                    <label for="send" class="distribution__title">Підпишіться на розсилку</label>
+                    <div class="distribution__wrapper">
+                        <input class="distribution__input" id="send" type="text" placeholder="E-mail">
+                        <button class="distribution__button" type="submit">
+                            Підписатися
+                            <svg class="distribution__icon" width="24" height="24">
+                                <use href="./src/img/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </footer>
 
@@ -415,6 +428,54 @@
                         <use href="./src/img/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <div class="form content-form">
+                    <form class="content-form__inner">
+                        <div class="content-form__title">Залиште свої дані, ми вам передзвонимо</div>
+                        <ul class="content-form__list">
+                            <li class="content-form__item">
+                                <label class="content-form__subtitle" for="name">Ім'я</label>
+                                <div class="content-form__wrapper">
+                                    <input class="content-form__input" type="text" name="name" id="name" placeholder="Максим" required>
+                                    <svg class="content-form__icon" width="18" height="18">
+                                        <use href="./src/img/icons.svg#icon-name" ></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="content-form__item">
+                                <label class="content-form__subtitle" for="tel">Телефон</label>
+                                <div class="content-form__wrapper">
+                                    <input class="content-form__input" type="tel" name="phone" id="tel" placeholder="+380982424024" required>
+                                    <svg class="content-form__icon" width="18" height="18">
+                                        <use href="./src/img/icons.svg#icon-phone" ></use>
+                                    </svg>
+                                </div>
+                            </li>
+                            <li class="content-form__item">
+                                <label class="content-form__subtitle" for="email">Пошта</label>
+                                <div class="content-form__wrapper">
+                                    <input class="content-form__input" type="email" name="phone" id="email" placeholder="emailexample@lntu.edu.ua" required>
+                                    <svg class="content-form__icon" width="18" height="18">
+                                        <use href="./src/img/icons.svg#icon-email_modal" ></use>
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="content-form__wrapper_area">
+                            <label class="content-form__subtitle" for="comment">Комментар</label>
+                            <textarea class="content-form__area" name="area" id="comment" placeholder="Введіть текст" required></textarea>
+                        </div>
+                        <div class="content-form__checkbox">
+                            <input class="content-form__check hidden" id="agree" name="checkbox" type="checkbox" required>
+                            <label class="content-form__label" for="agree" required>
+                                <svg class="content-form__icon_checkbox" width="18" height="18">
+                                    <use href="./src/img/icons.svg#icon-check" ></use>
+                                </svg>
+                                <p class="content-form__text">Погоджуюся з розсилкою та приймаю <span class="content-form__text_blue">Умови договору</span></p>
+                            </label>
+                        </div>
+                        <button class="content-form__button" type="submit">Відправити</button>
+                    </form>
+                </div>
             </div>
         </div>
 

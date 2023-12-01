@@ -746,8 +746,8 @@ button {
 .hidden {
     position: absolute;
     overflow: hidden;
-    left: -9999px;
-    top: -9999px;
+    left: 0;
+    top: 0;
     width: 1px;
     height: 1px;
 }
