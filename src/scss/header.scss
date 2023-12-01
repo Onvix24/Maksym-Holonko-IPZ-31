@@ -1,0 +1,74 @@
+.header {
+
+    // .header__container
+
+    &__container {
+        
+    }
+}
+.logo {
+
+    // .logo__link
+
+    &__link {
+
+        // .logo__link_color
+
+        &_color {
+        }
+    }
+}
+.nav {
+
+    // .nav__list
+
+    &__list {
+    }
+
+    // .nav__item
+
+    &__item {
+    }
+
+    // .nav__link
+
+    &__link {
+
+        // .nav__link_active
+
+        &_active {
+        }
+    }
+}
+.contact {
+
+    // .contact__item
+
+    &__item {
+    }
+
+    // .contact__email
+
+    &__email {
+    }
+
+    // .contact__image
+
+    &__image {
+
+        // .contact__image_envelope
+
+        &_envelope {
+        }
+
+        // .contact__image_smartphone
+
+        &_smartphone {
+        }
+    }
+
+    // .contact__tel
+
+    &__tel {
+    }
+}
