@@ -100,11 +100,6 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-    
-        &:hover,
-        &:focus {
-            background: var(--main-blue);
-        }
     }
 
     &__item {
@@ -132,6 +127,11 @@
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
         transition: background 0.3s ease, color 0.3s ease;
+
+        &:hover,
+        &:focus {
+            background: var(--main-blue);
+        }
     }
 }
 .distribution {

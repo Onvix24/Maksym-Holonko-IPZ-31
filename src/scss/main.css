@@ -150,9 +150,6 @@ button {
   align-items: center;
   gap: 10px;
 }
-.social__list:hover, .social__list:focus {
-  background: var(--main-blue);
-}
 .social__item {
   display: flex;
   justify-content: center;
@@ -176,6 +173,9 @@ button {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background 0.3s ease, color 0.3s ease;
+}
+.social__link:hover, .social__link:focus {
+  background: var(--main-blue);
 }
 
 .distribution {

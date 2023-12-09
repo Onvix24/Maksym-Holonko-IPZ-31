@@ -1,0 +1,134 @@
+.header_border {
+  border-bottom: 1px solid lightgray;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.logo__link {
+  padding: 25px 0px 25px 0px;
+  font-size: 26px;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--main-black);
+  letter-spacing: 0.78px;
+}
+.logo__link_color {
+  font-size: 26px;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--main-blue);
+  letter-spacing: 0.78px;
+}
+
+.nav {
+  margin-right: auto;
+}
+.nav__list {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.nav__item {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-black);
+  letter-spacing: 0.28px;
+  padding: 31.5px 0;
+}
+.nav__link {
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-black);
+  letter-spacing: 0.28px;
+  padding: 31.5px 0;
+  transition: all 0.3s ease;
+}
+.nav__link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  background: var(--main-blue);
+  transition: width 0.3s ease;
+  visibility: hidden;
+}
+.nav__link:hover::after, .nav__link:focus::after {
+  width: 100%;
+  visibility: visible;
+}
+.nav__link:hover, .nav__link:focus {
+  color: var(--main-blue);
+}
+.nav__link_active {
+  color: var(--main-blue);
+}
+.nav__link_active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  background: var(--main-blue);
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  color: var(--main-gray);
+}
+.contact__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  transition: all 0.3s ease;
+}
+.contact__email {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  padding: 31.5px 0;
+}
+.contact__email:hover, .contact__email:focus {
+  color: var(--main-blue);
+}
+.contact__image_envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.contact__image_smartphone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.contact__tel {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  padding: 31.5px 0;
+}
+.contact__tel:hover, .contact__tel:focus {
+  color: var(--main-blue);
+}/*# sourceMappingURL=header.css.map */
