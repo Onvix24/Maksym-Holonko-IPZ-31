@@ -9,6 +9,10 @@
         url("../img/studio-page/welcome/main-bg.jpg");
     background-size: cover;
 
+    @media (max-width: 728px) {
+        max-height: 400px;
+        padding: 118px 0;
+    }
     &__item {
         z-index: 3;
         display: flex;

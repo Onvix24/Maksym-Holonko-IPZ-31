@@ -34,6 +34,10 @@
     &__image {
         width: 270px;
         height: 260px;
+        @media (max-width: 768px) {
+            width: 354px;
+            height: 374px;
+        }
     }
 
     &__body {

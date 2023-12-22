@@ -41,6 +41,7 @@
 .catalog-list {
     display: grid;
     gap: 30px;
+    justify-items: center;
     grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(3, 1fr);
     padding-bottom: 94px;
@@ -152,8 +153,18 @@
     }
 }
 
-@media (max-width: 740px) and (min-width: 320px) {
+@media (max-width: 760px) and (min-width: 320px) {
     .catalog-list {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .catalog-list__item {
+        width: 450px;
+        max-width: 450px;
+    }
+
+    .catalog-list__body {
+        width: 450px;
+        height: 294px;
     }
 }

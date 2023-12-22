@@ -1,7 +1,6 @@
 .card {
-
     padding: 94px 0;
-    
+
     &__container {
     }
 }
@@ -17,14 +16,17 @@
 
     &__item {
         position: relative;
-        max-width: 270px;
+
+        @media (max-width: 768px) {
+            width: 354px;
+        }
     }
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 270px;
+        width: 100%;
         height: 120px;
         background-color: #f5f4fa;
         margin-bottom: 30px;
@@ -51,10 +53,9 @@
         color: var(--main-gray);
         letter-spacing: 0.42px;
     }
-}
-.contact {
-    &__card {
-        &_body {
-        }
+
+    &__body {
+        // max-width: 270px;
+        width: 270px;
     }
 }
