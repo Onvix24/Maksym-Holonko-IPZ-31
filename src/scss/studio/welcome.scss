@@ -1,0 +1,47 @@
+.welcome {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+    max-height: 600px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../img/studio-page/welcome/main-bg.jpg");
+    background-size: cover;
+
+    &__item {
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    &__title {
+        max-width: 696px;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.33em;
+        color: var(--main-white);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2.64px;
+    }
+
+    &__button {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        flex-shrink: 0;
+        padding: 10px 24px;
+        font-family: "Roboto";
+        transition: background 0.3s ease;
+        background: #2196f3;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.875em;
+        color: var(--main-white);
+        text-align: center;
+        letter-spacing: 0.96px;
+    }
+}

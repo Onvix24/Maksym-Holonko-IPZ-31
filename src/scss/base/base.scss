@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px 0 15px;
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}

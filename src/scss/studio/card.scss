@@ -1,0 +1,60 @@
+.card {
+
+    padding: 94px 0;
+    
+    &__container {
+    }
+}
+.hidden {
+}
+.content-card {
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 270px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background-color: #f5f4fa;
+        margin-bottom: 30px;
+    }
+
+    &__image {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #212121;
+        text-transform: uppercase;
+        letter-spacing: 0.42px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.7em;
+        color: var(--main-gray);
+        letter-spacing: 0.42px;
+    }
+}
+.contact {
+    &__card {
+        &_body {
+        }
+    }
+}
