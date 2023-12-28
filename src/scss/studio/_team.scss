@@ -2,6 +2,10 @@
     &__content {
         background: #f5f4fa;
         padding: 94px 0;
+
+        @media (max-width: 1200px) {
+            padding: 60px 0;
+        }
     }
 }
 .content-team {
@@ -23,6 +27,11 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+
+        @media (max-width: 1200px) {
+            max-width: 738px;
+            margin: 0 auto;
+        }
     }
 
     &__item {
@@ -34,9 +43,13 @@
     &__image {
         width: 270px;
         height: 260px;
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             width: 354px;
             height: 374px;
+        }
+
+        @media (max-width: 767px) {
+            width: 450px;
         }
     }
 

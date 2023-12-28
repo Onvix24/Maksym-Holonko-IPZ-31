@@ -1,5 +1,9 @@
 .fulltime-client {
     padding: 94px 0;
+
+    @media (max-width: 1200px) {
+        padding: 60px 0;
+    }
     &__container {
     }
 
@@ -20,14 +24,23 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+
+        @media (max-width: 1200px) {
+            max-width: 738px;
+            margin: 0 auto;
+        }
     }
 
     &__item {
         width: 170px;
         height: 92px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             width: 226px;
+        }
+
+        @media (max-width: 1200px) {
+            width: 210px;
         }
     }
 

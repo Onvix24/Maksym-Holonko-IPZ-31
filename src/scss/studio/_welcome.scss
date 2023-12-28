@@ -31,6 +31,11 @@
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 2.64px;
+
+        @media (max-width: 900px) {
+            font-size: 26px;
+            max-width: 360px;
+        }   
     }
 
     &__button {
