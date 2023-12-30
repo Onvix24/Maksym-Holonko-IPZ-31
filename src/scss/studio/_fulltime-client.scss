@@ -1,5 +1,9 @@
 .fulltime-client {
     padding: 94px 0;
+
+    @media (max-width: 1200px) {
+        padding: 60px 0;
+    }
     &__container {
     }
 
@@ -20,19 +24,32 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+
+        @media (max-width: 1200px) {
+            max-width: 738px;
+            margin: 0 auto;
+        }
     }
 
     &__item {
         width: 170px;
         height: 92px;
+
+        @media (max-width: 1200px) {
+            width: 226px;
+        }
+
+        @media (max-width: 1200px) {
+            width: 210px;
+        }
     }
 
     &__link {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 101%;
-        height: 101%;
+        width: 100%;
+        height: 100%;
         color: var(--main-svg);
         transition: color 0.3s ease;
         border-radius: 4px;

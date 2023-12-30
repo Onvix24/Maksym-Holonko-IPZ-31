@@ -1,12 +1,16 @@
 .work-content {
 }
 .content-work {
+    @media (max-width: 1200px) {
+        display: none;
+    }
     padding-bottom: 94px;
 
     &__container {
     }
 
-    &__title {margin-bottom: 50px;
+    &__title {
+        margin-bottom: 50px;
         font-size: 36px;
         font-weight: 700;
         color: var(--main-black);
@@ -14,22 +18,25 @@
         letter-spacing: 1.08px;
     }
 
-    &__list {display: flex;
+    &__list {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
     }
 
-    &__item {position: relative;
+    &__item {
+        position: relative;
     }
 
     &__img {
         flex-shrink: 0;
-    max-width: 370px;
-    height: auto;
+        max-width: 370px;
+        height: auto;
     }
 
-    &__text {position: absolute;
+    &__text {
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;

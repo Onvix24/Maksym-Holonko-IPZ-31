@@ -5,14 +5,34 @@
 
     &__container {
         display: flex;
+        flex-wrap: wrap;
         align-items: baseline;
+        justify-content: center;
         column-gap: 94px;
+        row-gap: 64px;
+  
+        @media (max-width: 1200px) {
+            column-gap: 165px;
+        }
     }
 
     &__inner {
+        display: flex;
+        flex-direction: column;
+        // margin-right: 70px;
+        gap: 28px;
+        @media (max-width: 1200px) {
+            // margin-right: 180px;
+            align-items: center;
+        }
+        @media (max-width: 605px) {
+            // margin-right: 0;
+        }
+        // max-width: 232px;
     }
 
     &__body {
+        max-width: 206px;
     }
 
     &__menu {
@@ -20,7 +40,7 @@
 }
 .logo {
     &__footer {
-        margin-bottom: 28px;
+        display: block;
     }
 
     &__link {
@@ -42,11 +62,16 @@
     }
 }
 .menu-footer {
-    max-width: 231px;
-
+    // max-width: 231px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1200px) {
+        align-items: center;
+    }
     &__item {
         font-size: 14px;
         font-style: normal;
+        width: max-content;
 
         &:not(:last-child) {
             margin-bottom: 12px;
@@ -81,6 +106,13 @@
     }
 }
 .social {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1200px) {
+        align-items: center;
+    }
+
+    // margin-right: 94px;
     max-width: 206px;
     max-height: 80px;
     &__title {
@@ -137,6 +169,14 @@
 .distribution {
     max-width: 570px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1200px) {
+        align-items: center;
+        max-width: 450px;
+    }
+
     // .distribution__title
 
     &__title {
@@ -154,6 +194,12 @@
     &__wrapper {
         display: flex;
         gap: 12px;
+        align-items: center;
+        width: 100%;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
     }
 
     // .distribution__input
@@ -193,6 +239,8 @@
         line-height: 187.5%;
         letter-spacing: 0.96px;
         transition: background 0.3s ease;
+
+        max-width: 200px;
 
         &:hover,
         &:focus {

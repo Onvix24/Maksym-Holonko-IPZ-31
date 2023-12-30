@@ -1,14 +1,15 @@
-@import "./base/null.scss";
-@import "./base/base.scss";
-@import "./shared/footer.scss";
-@import "./shared/header.scss";
+@import "./base/_null.scss";
+@import "./base/_base.scss";
 
+@import "./shared/_header.scss";
+@import "./shared/_footer.scss";
+    
 
-@import "./studio/modal.scss";
-@import "./studio/welcome.scss";
-@import "./studio/card.scss";
-@import "./studio/work.scss";
-@import "./studio/team.scss";
-@import "./studio/fulltime-client.scss";
+@import "./studio/_modal.scss";
+@import "./studio/_welcome.scss";
+@import "./studio/_card.scss";
+@import "./studio/_work.scss";
+@import "./studio/_team.scss";       
+@import "./studio/_fulltime-client.scss";
 
-@import "./portfolio/filter.scss";
+@import "./portfolio/_filter.scss";
