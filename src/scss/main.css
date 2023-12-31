@@ -281,7 +281,6 @@ button {
 
 .menu-burger {
   position: absolute;
-  display: flex;
   flex-direction: column;
   padding: 48px 40px;
   top: 0;
